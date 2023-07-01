@@ -15,10 +15,14 @@ Clone this repository to your local machine:
 
 Before running the bot, you need to configure your Gmail and Telegram API credentials.
 
+### Your `.env` file should contain folllowing information:
+1. TELEGRAM_BOT_TOKEN
+2. YOUR_EMAIL
+3. YOUR_APP_CODE 
+
 ## Gmail Configuration
--- 1. Enable the Gmail API and create a new project in the Google Cloud Console. <br>
--- 2. Set up OAuth 2.0 credentials and download the JSON file containing your client ID and client secret. <br>
--- 3. Rename the downloaded JSON file to credentials.json and place it in the config directory. <br>
+-- 1. Enable two-factor authentication in your gmail account, and generate application code (Instructions: https://support.google.com/accounts/answer/185833?hl=en) <br>
+-- 2. Rename the downloaded JSON file to credentials.json and place it in the config directory. <br>
 
 
 ## Telegram Configuration
@@ -26,24 +30,12 @@ Before running the bot, you need to configure your Gmail and Telegram API creden
 -- 1. Create a new bot on Telegram by talking to the BotFather.
 -- 2. Obtain the bot token and save it for later use.
 
-## Bot Configuration
-gmail.username: Your Gmail email address.
-gmail.accessTokenPath: The file path where the Gmail access token should be stored.
-telegram.botToken: The token of your Telegram bot.
-telegram.chatId: The chat ID of the Telegram user you want to send messages to.
-Usage
-To start the bot, run the following command:
+go run bot.go
 
-bash
-Copy code
-npm start
 The bot will check for new emails every 5 minutes and forward any new messages to the specified Telegram user.
-
 To send an email using the bot, simply send a message in the following format to your Telegram bot:
 
-css
-Copy code
-recipient_email ; subject ; body
+`recipient_email ; subject ; body`
 Make sure to replace recipient_email, subject, and body with the actual values.
 
 Contributing
