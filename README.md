@@ -9,7 +9,6 @@ The recipient email, subject, and body should be separated by a semicolon and a 
 Clone this repository to your local machine:
 
 `git clone https://github.com/your_username/gmail-telegram-bot.git`
-
 `cd mail-sender`
 `go get .`
 
@@ -30,7 +29,10 @@ Before running the bot, you need to configure your Gmail and Telegram API creden
 -- 1. Create a new bot on Telegram by talking to the BotFather.
 -- 2. Obtain the bot token and save it for later use.
 
-go run bot.go
+##  Create `.env` file with variables from above
+
+## Run your bot using `go run`
+`go run bot.go`
 
 The bot will check for new emails every 5 minutes and forward any new messages to the specified Telegram user.
 To send an email using the bot, simply send a message in the following format to your Telegram bot:
@@ -38,8 +40,8 @@ To send an email using the bot, simply send a message in the following format to
 `recipient_email ; subject ; body`
 Make sure to replace recipient_email, subject, and body with the actual values.
 
-Contributing
+# Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-License
+# License
 This project is licensed under the MIT License.
