@@ -20,7 +20,7 @@ Before running the bot, you need to configure your Gmail and Telegram API creden
 3. YOUR_APP_CODE 
 
 ## Gmail Configuration
--- 1. Enable two-factor authentication in your gmail account, and generate application code (Instructions: https://support.google.com/accounts/answer/185833?hl=en) <br>
+-- 1. Enable two-factor authentication in your gmail account, and generate application code (<a href="https://support.google.com/accounts/answer/185833?hl=en">Instructions</a>) <br>
 -- 2. Rename the downloaded JSON file to credentials.json and place it in the config directory. <br>
 
 
