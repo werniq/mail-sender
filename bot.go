@@ -240,6 +240,8 @@ func (App *Application) RetrieveUpcomingEmails(server, username, password string
 
 			// Wait for a certain duration before checking for new messages again
 			time.Sleep(time.Minute * 5)
+			App.RetrieveUpcomingEmails(server, username, password)
+			return
 		}
 	}()
 
@@ -387,9 +389,7 @@ func (App *Application) MessageHandler(c *gin.Context) {
 	}
 
 	if len(messageParts) != 3 {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"error": fmt.Sprintf("Invalid message format: %d", update.Message.From.ID),
-		})
+		App.BotApi.Send(tgbotapi.NewMessage(update.Message.Chat.ID, fmt.Sprintf("Invalid message format. Use recipient_email; email subject; email body")))
 		return
 	}
 
