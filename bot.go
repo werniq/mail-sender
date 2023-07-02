@@ -429,8 +429,8 @@ func main() {
 	}
 
 	gmailAuth := &GmailAuth{
-		Email:    "qniwwwersss@gmail.com",
-		Password: "gzvpvywxjzdsqodx",
+		Email:    os.Getenv("YOUR_EMAIL"),
+		Password: os.Getenv("YOUR_APP_CODE"),
 	}
 
 	bot, err := tgbotapi.NewBotAPI(os.Getenv("TELEGRAM_BOT_TOKEN"))
