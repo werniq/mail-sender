@@ -43,5 +43,7 @@ Make sure to replace recipient_email, subject, and body with the actual values.
 # Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
+# TODO: Update this code to properly sent files
+
 # License
 This project is licensed under the MIT License.
