@@ -8,7 +8,7 @@ The recipient email, subject, and body should be separated by a semicolon and a 
 ## Installation
 Clone this repository to your local machine:
 
-`git clone https://github.com/your_username/gmail-telegram-bot.git`
+`git clone https://github.com/werniq/mail-sender.git`
 `cd mail-sender`
 `go get .`
 
