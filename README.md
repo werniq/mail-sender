@@ -43,7 +43,7 @@ Make sure to replace recipient_email, subject, and body with the actual values.
 # Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-# IDEAS FOR TODO: Update this code to properly sent files
+# Ideas for contibuting: 
+### 1. Update this code to properly sent files
+### 2. Would be interesting to see, how you would implement support for Hebrew language. I've tried to do this, but it works only for title, not for email subject. 
 
-# License
-This project is licensed under the MIT License.
