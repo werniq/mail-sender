@@ -40,6 +40,12 @@ To send an email using the bot, simply send a message in the following format to
 `recipient_email ; subject ; body`
 Make sure to replace recipient_email, subject, and body with the actual values.
 
+# Screenshots
+![photo_2023-07-01_18-43-23](https://github.com/werniq/mail-sender/assets/73220736/12e1baec-3882-4ea5-8462-4571f6cf56ee)
+![photo_2023-07-01_18-43-05](https://github.com/werniq/mail-sender/assets/73220736/751c2008-460d-4251-a48b-ef5e4d3974cd)
+![photo_2023-07-01_19-53-00](https://github.com/werniq/mail-sender/assets/73220736/18ee6753-f42d-4c9e-aff7-d247a2c91aaf)
+
+
 # Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
